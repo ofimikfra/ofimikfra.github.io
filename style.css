@@ -1,0 +1,60 @@
+body {
+    background-image: url(bg.png);
+    background-color: #32354a;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 25px;
+    font-family: fanda;
+    color: #fffbe0;
+    padding: 30px;
+}
+
+.typer {
+    display: inline-block;
+}
+
+.type {
+    overflow: hidden;
+    border-right: .15em solid #fffbe0;
+    white-space: nowrap;
+    font-size: 50px;
+    width: 0;
+    animation: typing 1.5s steps(30, end) forwards;
+}
+
+@keyframes typing {
+    from {width: 0}
+    to {width: 100%}
+}
+
+@font-face {
+    font-family: fanda;
+    src: url("fanda-black-font/FandaBlack-vm6E.ttf");
+}
+
+
+.top {
+    margin-left: 320px;
+    margin-bottom: 40px;
+}
+
+.top img {
+    width: 5%;
+    float: right;
+    margin-left: 20px;
+}
+
+.container {
+    display: flex;
+}
+
+.nav {
+    background-color: aquamarine;
+    margin-top: 150px;
+    margin-right: 46px;
+    width: 20%;
+}
+
+.main {
+    background-color: aquamarine;
+}
