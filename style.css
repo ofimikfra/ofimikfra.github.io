@@ -1,12 +1,24 @@
 body {
     background-image: url(bg.png);
-    background-color: #32354a;
+    background-color: #212434;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     font-size: 25px;
     font-family: fanda;
     color: #fffbe0;
     padding: 30px;
+}
+
+@keyframes typing {
+    from {width: 0}
+    to {width: 100%}
+}
+
+@font-face {
+    font-family: fanda;
+    src: url("fanda-black-font/FandaBlack-vm6E.ttf");
 }
 
 .typer {
@@ -22,24 +34,13 @@ body {
     animation: typing 1.5s steps(30, end) forwards;
 }
 
-@keyframes typing {
-    from {width: 0}
-    to {width: 100%}
-}
-
-@font-face {
-    font-family: fanda;
-    src: url("fanda-black-font/FandaBlack-vm6E.ttf");
-}
-
-
-.top {
+.header {
     margin-left: 320px;
     margin-bottom: 40px;
 }
 
-.top img {
-    width: 5%;
+.header img {
+    width: 4%;
     float: right;
     margin-left: 20px;
 }
@@ -49,10 +50,35 @@ body {
 }
 
 .nav {
-    background-color: aquamarine;
     margin-top: 150px;
     margin-right: 46px;
     width: 20%;
+    line-height: 60px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fffbe0;
+    font-size: 30px;
+}
+
+.nav a:visited {
+    color: #fffbe0;
+}
+
+.nav a:hover {
+    text-decoration: blink;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: #32354a;
+    padding-bottom: 10px;
 }
 
 .main {
