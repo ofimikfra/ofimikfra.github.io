@@ -1,5 +1,5 @@
 body {
-    background-image: url(bg.png);
+    background-image: url(pics/bg1.png);
     background-color: #212434;
     background-repeat: no-repeat;
     background-size: cover;
@@ -8,12 +8,22 @@ body {
     font-size: 25px;
     font-family: fanda;
     color: #fffbe0;
-    padding: 30px;
+    padding: 30px 70px 30px 70px;
+}
+
+p {
+    line-height: 30px;
+    font-family: fanda;
 }
 
 @keyframes typing {
     from {width: 0}
     to {width: 100%}
+}
+
+@keyframes blink {
+    from, to { border-color: transparent; }
+    50% { border-color: #fffbe0; }
 }
 
 @font-face {
@@ -22,27 +32,34 @@ body {
 }
 
 .typer {
+    width: 87%;
     display: inline-block;
 }
 
-.type {
+.typesmooth {
     overflow: hidden;
-    border-right: .15em solid #fffbe0;
+    border-right: .10em solid #fffbe0;
     white-space: nowrap;
     font-size: 50px;
     width: 0;
-    animation: typing 1.5s steps(30, end) forwards;
+    animation: typing 1.5s forwards;
 }
 
 .header {
-    margin-left: 320px;
-    margin-bottom: 40px;
+    margin-left: 280px;
+    margin-bottom: 20px;
+    background-color: #212434;
 }
 
 .header img {
     width: 4%;
     float: right;
     margin-left: 20px;
+    transition: transform 0.3s ease;
+}
+
+.header img:hover {
+    transform: scale(1.1);
 }
 
 .container {
@@ -50,24 +67,28 @@ body {
 }
 
 .nav {
-    margin-top: 150px;
+    top: 280px;
     margin-right: 46px;
     width: 20%;
     line-height: 60px;
+    position: fixed;
 }
 
 .nav a {
     text-decoration: none;
     color: #fffbe0;
     font-size: 30px;
+    display: inline-block;
+    transition: transform 0.3s ease;
 }
 
-.nav a:visited {
+a:visited {
     color: #fffbe0;
 }
 
-.nav a:hover {
-    text-decoration: blink;
+a:hover {
+    transform: scale(1.1);
+    color: #bcc3e2;
 }
 
 .footer {
@@ -77,10 +98,56 @@ body {
     width: 100%;
     text-align: center;
     font-size: 18px;
-    color: #32354a;
-    padding-bottom: 10px;
+    color: #bcc3e2;
+    padding: 10px;
 }
 
 .main {
-    background-color: aquamarine;
+    color: #fffbe0;
+    margin-left: 280px;
+    flex-grow: 1;
+}
+
+form input{
+    background-color: #32354a;
+    color: #fffbe0;
+    border: none;
+    font-size: 18px;
+    line-height: 25px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+form {
+    display: inline-block;
+}
+
+textarea {
+    background-color: #32354a;
+    color: #fffbe0;
+    border: none;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    padding: 5px;
+}
+
+#submit {
+    width: 20%;
+    font-size: 20px;
+    font-family: fanda;
+}
+
+#error {
+    color: #fffbe0;
+    font-size: 16px;
+}
+
+span {
+    color: #bcc3e2;
+    text-decoration: underline;
+}
+
+hr {
+    border: 2px solid #32354a;
 }

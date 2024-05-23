@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Sofia</title>
+        <link rel="icon" type="image/x-icon" href="pics/icon.png">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <script src="script.js"></script>
+    <body>
+
+        <div class="header"> <!-- top bar with name & socmed links -->
+
+            <div class="typer">
+                <div class="typesmooth">GET IN TOUCH WITH ME</div>
+            </div>
+
+            <a href="https://linkedin.com" target=”_blank”>
+                <img src="pics/linkedin.png" alt="linkedin">
+            </a>
+            <a href="https://github.com/ofimikfra" target=”_blank”>
+                <img src="pics/github.png" alt="github">
+            </a>
+            
+        </div>
+
+
+        <div class="container"> 
+
+            <div class="nav"> <!-- navigation sidebar -->
+
+                <a href="index.html" onmouseover="yay(this)" onmouseout="bye(this)">home </a> <br>
+                <a href="projects.html" onmouseover="yay(this)" onmouseout="bye(this)">projects </a> <br>
+                <a href="certs.html" onmouseover="yay(this)" onmouseout="bye(this)">certifications </a> <br>
+                <a href="contact.html" class="current">contact me !!!</a>
+
+            </div>
+    
+            <div class="main"> <!-- contact form -->
+                <h2>i'd love to hear from you !</h2>
+                
+                <form name="contact" action="mailto:sofiambfrancisco@gmail.com" method="post" enctype="text/plain" onsubmit="return validateForm()">
+
+                    <input type="text" name="name" placeholder="Name" maxlength="100" size="25%" required>
+                    <input type="text" name="email" placeholder="Email Address" maxlength="100" size="35%" required> 
+                    <span id="error"></span><br>
+                    <input type="text" name="subject" placeholder="Subject" size="63%" required> <br>
+                    <textarea name="message" placeholder="Type your message here..." rows="10" cols="62" required></textarea> <br>
+                    <input id="submit" type="submit" value="SEND">
+
+                </form>
+
+                <h4>alternatively, email me at <span>sofiambfrancisco@gmail.com</span></h4>
+                <h5>or connect with me via <a href="https://www.linkedin.com/in/sofiambfrancisco/" target="_blank">linkedin</a>.</h5>
+
+            </div>
+
+        </div>
+
+        <div class="footer">
+            @ 2024 Sofia Francisco. All Rights Reserved.
+        </div>
+        
+
+    </body>
+</html>
