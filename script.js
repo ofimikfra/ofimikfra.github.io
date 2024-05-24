@@ -9,10 +9,11 @@ function bye(id) {
 function validateForm() {
     let email = document.forms["contact"]["email"].value;
     if (!email.match(/\w\S+@\S+(\.\S+){1,}/)) {
-        document.getElementById("error").textContent = "Please enter a valid email address."
+        alert("Please enter a valid email address.")
         return false
     }
 
     errorElement.textContent = "";
     return true;
 }
+

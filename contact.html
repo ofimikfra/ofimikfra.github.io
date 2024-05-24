@@ -35,22 +35,27 @@
 
             </div>
     
-            <div class="main"> <!-- contact form -->
-                <h2>i'd love to hear from you !</h2>
+            <div class="main" style="display: flex; align-items: flex-start; padding-top: 80px;"> <!-- contact form -->
+
+                <div class="formdesc">
+                    <p>
+                        Let's connect! I'm always open to talking with others to learn more about
+                        cybersecurity and programming. 
+                    </p>
+
+                    <p style="font-size: 18px;">alternatively, you can email me at <span>sofiambfrancisco@gmail.com</span></p>
+
+                    <img src="https://i.pinimg.com/564x/4a/43/1f/4a431f323862f9fda08b6afbd62ac277.jpg" width="100%">
+                </div>
                 
                 <form name="contact" action="mailto:sofiambfrancisco@gmail.com" method="post" enctype="text/plain" onsubmit="return validateForm()">
 
-                    <input type="text" name="name" placeholder="Name" maxlength="100" size="25%" required>
-                    <input type="text" name="email" placeholder="Email Address" maxlength="100" size="35%" required> 
-                    <span id="error"></span><br>
-                    <input type="text" name="subject" placeholder="Subject" size="63%" required> <br>
-                    <textarea name="message" placeholder="Type your message here..." rows="10" cols="62" required></textarea> <br>
+                    <input type="text" name="name" placeholder="Name" maxlength="100" size="50%" required>
+                    <input type="text" name="email" placeholder="Email Address" maxlength="100" size="50%" required>
+                    <textarea name="message" placeholder="Type your message here..." rows="10" cols="49" required></textarea> <br>
                     <input id="submit" type="submit" value="SEND">
 
                 </form>
-
-                <h4>alternatively, email me at <span>sofiambfrancisco@gmail.com</span></h4>
-                <h5>or connect with me via <a href="https://www.linkedin.com/in/sofiambfrancisco/" target="_blank">linkedin</a>.</h5>
 
             </div>
 
