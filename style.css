@@ -8,12 +8,23 @@ body {
     font-size: 25px;
     font-family: "fanda";
     color: #fffbe0;
-    padding: 30px 50px 30px 50px;
+    padding: 30px;
 }
 
 p {
-    line-height: 25px;
+    line-height: 28px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+p a {
+    color: #bcc3e2;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+p a:hover {
+    transform: translateX(10px);
 }
 
 @keyframes typing {
@@ -32,6 +43,13 @@ p {
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 .typer {
     width: 87%;
@@ -53,11 +71,11 @@ p {
     white-space: nowrap;
     font-size: 50px;
     width: 0;
-    animation: typing 0.8s steps(15, end) forwards, blink 1s infinite step-end 0.8s;
+    animation: typing 1s steps(18, end) forwards, blink 1s infinite step-end 0.8s;
 }
 
 .header {
-    margin-left: 280px;
+    margin-left: 200px;
     margin-bottom: 20px;
     background-color: #212434;
 }
@@ -80,7 +98,7 @@ p {
 .nav {
     top: 280px;
     margin-right: 46px;
-    width: 20%;
+    width: 15%;
     line-height: 60px;
     position: fixed;
 }
@@ -88,7 +106,7 @@ p {
 .nav a {
     text-decoration: none;
     color: #fffbe0;
-    font-size: 30px;
+    font-size: 25px;
     display: inline-block;
     transition: transform 0.3s ease;
 }
@@ -98,7 +116,7 @@ a:visited {
 }
 
 a:hover {
-    transform: scale(1.1);
+    transform: translateX(10px);
     color: #bcc3e2;
 }
 
@@ -115,14 +133,82 @@ a:hover {
 
 .main {
     color: #fffbe0;
-    margin-left: 280px;
+    margin-left: 250px;
     flex-grow: 1;
+    
+}
+
+.intro {
+    display: flex; 
+    align-items: flex-start; 
+
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeIn 1s forwards;
+}
+
+.profile {
+    display: inline-block;
+    width: 30%;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+.about {
+    display: inline-block;
+    width: 60%;
+    align-items: center;
+    margin: auto;
+
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeIn 1s forwards;
+}
+
+.skills {
+    display: flex;
+    width: 100%;
+
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeIn 1s forwards;
+    animation-delay: 0.6s;
+}
+
+.skillist {
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+}
+
+.skillist img {
+    transition: transform 0.5s ease;
+    width: 40%;
+    margin-bottom: 5px;
+}
+
+.skillist img:hover {
+    transform: scale(1.2);
+}
+
+.skillist .skilldesc {
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 15px;
+}
+
+.skillist:hover .skilldesc {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .formdesc {
     display: inline-block;
-    width: 40%;
-    margin-right: 30px;
+    width: 45%;
+    margin-right: 40px;
 }
 
 form {
@@ -156,11 +242,12 @@ textarea {
     width: 20%;
     font-size: 20px;
     font-family: fanda;
+    display: inline-block;
+    transition: transform 0.3s ease;
 }
 
 #submit:hover {
-    transition: transform 0.3s ease;
-    transform: translateX(1.1);
+    transform: translateX(10px);
 }
 
 #error {
@@ -175,4 +262,11 @@ span {
 
 hr {
     border: 2px solid #32354a;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeIn 1s forwards;
+    animation-delay: 0.5s;
 }
