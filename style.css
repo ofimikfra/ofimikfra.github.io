@@ -39,14 +39,14 @@ a:hover {
 }
 
 .footer {
+    color: #bcc3e2;
+    text-align: center;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    text-align: center;
-    font-size: 18px;
-    color: #bcc3e2;
     padding: 10px;
+    font-size: 18px;
 }
 
 .container {
@@ -253,16 +253,17 @@ a:hover {
 
 /* hovering over project title */
 
-.projdesc h2 {
+.projdesc h2, .cert h2 {
     transition: transform 0.3s ease;
-    position: relative;
+    display: inline-block;
+    margin-bottom: 0;
 }
 
-.projdesc h2:hover {
+.projdesc h2:hover, .cert h2:hover {
     transform: translateX(50px);
 }
 
-.projdesc h2::before {
+.projdesc h2::before, .cert h2::before {
     color: #bcc3e2;
     content: ">> ";
     position: absolute;
@@ -271,16 +272,46 @@ a:hover {
     transition: opacity 0.3s ease, left 0.3s ease;
 }
 
-.projdesc h2.hovered::before {
+.projdesc h2.hovered::before, .cert h2.hovered::before {
     left: -50;
     opacity: 1;
 }
 
-.projdesc h2.hovered {
+.projdesc h2.hovered, .projdesc h2.hovered {
     padding-left: 1px;
 }
 
+/* certificates page */
+
+.cert {
+    display: inline-block;
+    margin-right: 40px;
+    padding: 10px;
+    width: 50%;
+    line-height: 25px;
+    font-size: 20px;
+
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards;
+}
+
+.cert img {
+    width: 100%;
+    border-radius: 20px;
+}
+
 /* contact form */
+
+form {
+    display: inline-block;
+    width: 50%;
+    
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeIn 1s forwards;
+    animation-delay: 0.2s;
+}
 
 .formdesc {
     display: inline-block;
@@ -290,16 +321,6 @@ a:hover {
     opacity: 0;
     transform: translateY(-20px);
     animation: fadeIn 1s forwards;
-}
-
-form {
-    display: inline-block;
-    width: 50%;
-
-    opacity: 0;
-    transform: translateY(-20px);
-    animation: fadeIn 1s forwards;
-    animation-delay: 0.2s;
 }
 
 form input{
@@ -334,11 +355,6 @@ textarea {
 
 #submit:hover {
     transform: translateX(10px);
-}
-
-#error {
-    color: #fffbe0;
-    font-size: 16px;
 }
 
 /* other */
