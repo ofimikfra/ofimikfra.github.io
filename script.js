@@ -27,3 +27,19 @@ function validateForm() {
     return true;
 }
 
+function toggleNav() {
+    var nav = document.querySelector('.nav');
+    nav.classList.toggle('active');
+}
+
+function handleScroll() {
+    var profile = document.querySelector('.profile');
+    if (window.scrollY === 0) {
+        profile.classList.remove('scrolled');
+    } else {
+        profile.classList.add('scrolled');
+    }
+}
+
+window.addEventListener('scroll', handleScroll);
+

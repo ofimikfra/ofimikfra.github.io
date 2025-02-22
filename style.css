@@ -41,7 +41,7 @@ a:hover {
 .footer {
     color: #bcc3e2;
     text-align: center;
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -135,7 +135,7 @@ a:hover {
     margin-right: 46px;
     width: 15%;
     line-height: 60px;
-    position: fixed;
+    position: absolute;
 }
 
 .nav a {
@@ -379,4 +379,130 @@ hr {
     transform: translateY(-20px);
     animation: fadeIn 1s forwards;
     animation-delay: 0.1s;
+}
+
+.nav-toggle {
+    display: none; 
+}
+
+
+
+/* for mobile */
+
+@media (max-width: 768px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    p {
+        font-size: 15px;
+        line-height: normal;
+    }
+
+    .nav {
+        width: 100%;
+        text-align: center;
+        display: none; /* Hide the navigation by default */
+        position: fixed;
+        padding-top: 30px; 
+        padding-bottom: 10px;
+        background: rgba(50, 53, 74, 1);
+        z-index: 1000; /* Ensure it overlays other content */
+        font-size: 15px;
+        line-height: normal;
+        top: 0;
+        left: 0;
+    }
+
+    .nav a {
+        display: block;
+        padding: 10px;
+        line-height: 0.5;
+    }
+
+    .nav-toggle {
+        display: block; /* Show the toggle button on smaller screens */
+        background-color: transparent;
+        color: #fffbe0;
+        border: none;
+        font-size: 30px;
+        padding: 10px;
+        cursor: pointer;
+        text-align: left;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 1001; /* Ensure it overlays other content */
+    }
+
+    .main {
+        width: 100%; /* Make main content take up full width */
+        margin-left: 0; /* Remove left margin */
+    }
+
+    .intro {
+        flex-direction: column; /* Stack profile and about sections */
+        position: relative;
+        display: flex;
+    }
+
+    .profile {
+        width: 100%; /* Make profile take up full width */
+        margin-right: 0; /* Remove right margin */
+        height: 35vh;
+        filter: none;
+        transition: height 0.8s ease, filter 0.5s ease;
+    }
+
+    .profile.scrolled {
+        height: 10vh; /* Reduced height when scrolled */
+        filter: blur(5px); /* Blur effect when scrolled */
+        opacity: 0.5;
+    }
+
+    .about {
+        width: 100%; /* Make about take up full width */
+    }
+
+    
+    .typewrite {
+        font-size: 25px;
+    }
+
+    hr {
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .footer {
+        font-size: 10px;
+    }
+
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+        
+    }
+
+    .skillist {
+        width: 25%; /* adjust */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skillist img {
+        width: 90%; /* Adjust image size */
+    }
+}
+
+/* Show the navigation when the toggle button is clicked */
+.nav.active {
+    display: block;
 }
