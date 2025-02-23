@@ -18,7 +18,7 @@ p {
 
 p a {
     color: #bcc3e2;
-    text-decoration: none;
+    text-decoration: underline;
     transition: transform 0.3s ease;
     display: inline-block;
 }
@@ -154,7 +154,7 @@ a:hover {
     margin-right: 46px;
     width: 15%;
     line-height: 60px;
-    position: absolute;
+    position: fixed;
 }
 
 .nav a {
@@ -189,6 +189,11 @@ a:hover {
     opacity: 0;
     transform: translateY(-20px);
     animation: fadeIn 1s forwards;
+}
+
+.about p a:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
 }
 
 /* homepage skills */
@@ -277,14 +282,14 @@ a:hover {
 }
 
 .projdesc h2:hover, .cert h2:hover {
-    transform: translateX(50px);
+    transform: translateX(30px);
 }
 
 .projdesc h2::before, .cert h2::before {
     color: #bcc3e2;
-    content: ">> ";
+    content: "> ";
     position: absolute;
-    left: -50px;
+    left: -30px;
     opacity: 0;
     transition: opacity 0.3s ease, left 0.3s ease;
 }
@@ -292,10 +297,6 @@ a:hover {
 .projdesc h2.hovered::before, .cert h2.hovered::before {
     left: -50;
     opacity: 1;
-}
-
-.projdesc h2.hovered, .projdesc h2.hovered {
-    padding-left: 1px;
 }
 
 /* certificates page */
@@ -402,6 +403,13 @@ hr {
     display: none; 
 }
 
+.headerhome {
+    display: none;
+}
+
+.blurtop {
+    display: none;
+}
 
 /* for mobile */
 
@@ -421,12 +429,26 @@ hr {
         background-color: #212434;
         background-repeat: no-repeat;
         background-size: cover;
-        background-attachment: scroll;
+        background-attachment: fixed;
         background-position: center;
         font-family: "fanda";
         color: #fffbe0;
         padding: 10px;
     }
+
+    .blurtop {
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 15%;
+        z-index: 999;
+        width: 100%;
+        margin: 0;
+        background: linear-gradient(to bottom, rgba(33, 36, 52, 1), rgba(33, 36, 52, 0)); /* Gradient overlay */
+    }
+
+    /* home page */
 
     hr {
         margin: 0;
@@ -506,10 +528,10 @@ hr {
     .profile {
         width: 85%; 
         margin: auto;
-        height: 20vh;
+        height: 25vh;
         filter: none;
         transition: height 0.8s ease, filter 0.5s ease;
-        padding-top: 45px;
+        padding-top: 55px;
     }
 
     .profile img {
@@ -525,7 +547,7 @@ hr {
     .about {
         width: auto; 
         padding-top: 50px;
-        background: linear-gradient(rgba(50, 53, 74, 0), rgb(33, 36, 52, 0.8), rgb(33, 36, 52, 1), rgb(33, 36, 52,0));
+        background: linear-gradient(rgba(50, 53, 74, 0), rgb(33, 36, 52, 0.8), rgb(33, 36, 52, 0), rgb(33, 36, 52,0));
     }
     
     .typewrite {
@@ -567,8 +589,8 @@ hr {
     .headerhome {
         display: flex;
         position: fixed;
-        top: 25;
-        right: 20;
+        margin-top: 10px;
+        right: 20px;
         z-index: 1000;
         background: transparent;
     }
@@ -585,6 +607,64 @@ hr {
 
     .headerhome a:hover {
         transform: none;
+    }
+
+    /* project page */
+
+    .header {
+        display: flex;
+        margin-left: 0;
+        margin-bottom: 0;
+        margin-top: 55px;
+        z-index: 1000;
+        width: 100%;
+        background: transparent;
+    }
+
+    .header .typesmooth {
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .header .typer {
+        width: auto;
+    }
+
+    .header img {
+        display: none;
+    }
+
+    .proj {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        opacity: 0;
+        transform: translateY(-20px);
+        animation: fadeIn 1s forwards;
+    }
+
+    .proj .projimg {
+        width: 100%;
+        margin-right: 0;
+        border-radius: 20px;
+    }
+
+    .proj img {
+        width: 10%;
+        margin-right: 0;
+    }
+
+    .projdesc img {
+        width: 10%;
+        transition: none;
+        transform: none;
+    }
+    
+    .projdesc img:hover {
+        transition: none; 
+        transform: none; 
+        width: 10%;
     }
 
 }
