@@ -29,7 +29,9 @@ function validateForm() {
 
 function toggleNav() {
     var nav = document.querySelector('.nav');
+    var main = document.querySelector('.main');
     nav.classList.toggle('active');
+    main.classList.toggle('blurred');
 }
 
 function handleScroll() {

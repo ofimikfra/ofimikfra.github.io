@@ -421,7 +421,7 @@ hr {
         background-color: #212434;
         background-repeat: no-repeat;
         background-size: cover;
-        background-attachment: fixed;
+        background-attachment: scroll;
         background-position: center;
         font-family: "fanda";
         color: #fffbe0;
@@ -440,22 +440,36 @@ hr {
     .nav {
         width: 100%;
         text-align: center;
-        display: none; /* Hide the navigation by default */
+        justify-content: center;
         position: fixed;
         padding-top: 30px; 
         padding-bottom: 10px;
-        background: rgba(50, 53, 74, 1);
+        background: #212434;
         z-index: 1000; /* Ensure it overlays other content */
         font-size: 15px;
         line-height: normal;
         top: 0;
         left: 0;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-out; /* Add transition for smooth effect */
+        border-radius: 0 0 20px 20px;
+        border: 2px solid #32354a;
+    }
+
+    .nav.active {
+        display: block;
+        transform: translateY(0); /* Drop down the navigation */
     }
 
     .nav a {
         display: block;
         padding: 10px;
-        line-height: 0.5;
+        line-height: 0;
+        font-size: 20px;
+    }
+
+    .nav a:hover {
+        transform: none;
     }
 
     .nav-toggle {
@@ -476,6 +490,11 @@ hr {
     .main {
         width: 100%; 
         margin-left: 0; 
+        transition: filter 0.3s ease-in-out;
+    }
+
+    .main.blurred {
+        filter: blur(5px);
     }
 
     .intro {
@@ -485,9 +504,9 @@ hr {
     }
 
     .profile {
-        width: 90%; 
+        width: 85%; 
         margin: auto;
-        height: 30vh;
+        height: 20vh;
         filter: none;
         transition: height 0.8s ease, filter 0.5s ease;
         padding-top: 45px;
