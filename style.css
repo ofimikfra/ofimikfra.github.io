@@ -405,7 +405,7 @@ hr {
 
 /* for mobile */
 
-@media only screen and (orientation: portrait) {
+@media (max-width: 768px) {
 
     .container {
         flex-direction: column;
@@ -417,7 +417,7 @@ hr {
     }
 
     body {
-        background-image: url(pics/bg1.png);
+        background-image: url(pics/bg2.png);
         background-color: #212434;
         background-repeat: no-repeat;
         background-size: cover;
@@ -506,12 +506,12 @@ hr {
 
     .about {
         width: auto; 
-        padding-top: 70px;
-        background: linear-gradient(rgba(50, 53, 74, 0), rgb(33, 36, 52,0.8), rgb(33, 36, 52,0.9), rgb(33, 36, 52,1));
+        padding-top: 50px;
+        background: linear-gradient(rgba(50, 53, 74, 0), rgb(33, 36, 52, 0.8), rgb(33, 36, 52, 1), rgb(33, 36, 52,0));
     }
     
     .typewrite {
-        font-size: 25px;
+        font-size: 30px;
     }
 
     .footer {
@@ -524,7 +524,6 @@ hr {
         flex-wrap: wrap;
         justify-content: space-around;
         width: 100%;
-        background: #212434;
         transform: translateY(-20px);
         animation: fadeIn 1s forwards;
     }
