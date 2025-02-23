@@ -128,6 +128,25 @@ a:hover {
     transform: scale(1.2);
 }
 
+/* header home */
+
+.headerhome {
+    margin-left: 200px;
+    margin-bottom: 20px;
+    background-color: #212434;
+}
+
+.headerhome img {
+    width: 4%;
+    float: right;
+    margin-left: 20px;
+    transition: transform 0.3s ease;
+}
+
+.headerhome img:hover {
+    transform: scale(1.2);
+}
+
 /* navigation sidebar */
 
 .nav {
@@ -149,7 +168,6 @@ a:hover {
 .intro {
     display: flex; 
     align-items: flex-start; 
-
     opacity: 0;
     transform: translateY(-20px);
     animation: fadeIn 1s forwards;
@@ -157,7 +175,7 @@ a:hover {
 
 .profile {
     display: inline-block;
-    width: 30%;
+    width: 35%;
     margin-right: 20px;
     margin-top: 30px;
 }
@@ -178,7 +196,6 @@ a:hover {
 .skills {
     display: flex;
     width: 100%;
-
     opacity: 0;
     transform: translateY(-20px);
     animation: fadeIn 1s forwards;
@@ -386,10 +403,9 @@ hr {
 }
 
 
-
 /* for mobile */
 
-@media (max-width: 768px) {
+@media only screen and (orientation: portrait) {
 
     .container {
         flex-direction: column;
@@ -398,6 +414,28 @@ hr {
     p {
         font-size: 15px;
         line-height: normal;
+    }
+
+    body {
+        background-image: url(pics/bg1.png);
+        background-color: #212434;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        font-size: 25px;
+        font-family: "fanda";
+        color: #fffbe0;
+        padding: 10px;
+    }
+
+    hr {
+        margin: 0;
+        background: #212434;
+    }
+
+    h2 {
+        font-size: 25px;
     }
 
     .nav {
@@ -433,53 +471,52 @@ hr {
         position: fixed;
         top: 10px;
         left: 10px;
-        z-index: 1001; /* Ensure it overlays other content */
+        z-index: 1001; 
     }
 
     .main {
-        width: 100%; /* Make main content take up full width */
-        margin-left: 0; /* Remove left margin */
+        width: 100%; 
+        margin-left: 0; 
     }
 
     .intro {
-        flex-direction: column; /* Stack profile and about sections */
+        flex-direction: column;
         position: relative;
         display: flex;
     }
 
     .profile {
-        width: 100%; /* Make profile take up full width */
-        margin-right: 0; /* Remove right margin */
-        height: 35vh;
+        width: 90%; 
+        margin: auto;
+        height: 20vh;
         filter: none;
         transition: height 0.8s ease, filter 0.5s ease;
+        padding-top: 45px;
+    }
+
+    .profile img {
+        width: 100%; 
     }
 
     .profile.scrolled {
-        height: 10vh; /* Reduced height when scrolled */
-        filter: blur(5px); /* Blur effect when scrolled */
+        height: 10vh; 
+        filter: blur(5px); 
         opacity: 0.5;
     }
 
     .about {
-        width: 100%; /* Make about take up full width */
+        width: auto; 
+        padding-top: 70px;
+        background: linear-gradient(rgba(50, 53, 74, 0), rgb(33, 36, 52,0.8), rgb(33, 36, 52,0.9), rgb(33, 36, 52,1));
     }
-
     
     .typewrite {
         font-size: 25px;
     }
 
-    hr {
-        margin: 0;
-    }
-
-    h2 {
-        font-size: 20px;
-    }
-
     .footer {
         font-size: 10px;
+        width: auto;
     }
 
     .skills {
@@ -487,11 +524,19 @@ hr {
         flex-wrap: wrap;
         justify-content: space-around;
         width: 100%;
-        
+        background: #212434;
+        transform: translateY(-20px);
+        animation: fadeIn 1s forwards;
+    }
+
+    .skillistheader {
+        width: 100%; /* Ensure it takes up the full width */
+        text-align: center;
+        background: #212434; /* Background color */
     }
 
     .skillist {
-        width: 25%; /* adjust */
+        width: 15%; /* adjust */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -500,9 +545,32 @@ hr {
     .skillist img {
         width: 90%; /* Adjust image size */
     }
+
+    .headerhome {
+        display: flex;
+        position: fixed;
+        top: 25;
+        right: 20;
+        z-index: 1000;
+        background: transparent;
+    }
+    
+    .headerhome img {
+        width: 25px;
+        transition: transform 0.3s ease;
+        margin-left: 10px;
+    }
+
+    .headerhome img:hover {
+        transform: scale(1.2);
+    }
+
+    .headerhome a:hover {
+        transform: none;
+    }
+
 }
 
-/* Show the navigation when the toggle button is clicked */
 .nav.active {
     display: block;
 }
