@@ -485,9 +485,9 @@ hr {
     }
 
     .profile {
-        width: 85%; 
+        width: 90%; 
         margin: auto;
-        height: 25vh;
+        height: 30vh;
         filter: none;
         transition: height 0.8s ease, filter 0.5s ease;
         padding-top: 45px;
