@@ -485,7 +485,7 @@ hr {
     }
 
     .profile {
-        width: 80%; 
+        width: 85%; 
         margin: auto;
         height: 25vh;
         filter: none;
@@ -510,7 +510,7 @@ hr {
     }
     
     .typewrite {
-        font-size: 100%;
+        font-size: 120%;
         width: 100%;
     }
 
