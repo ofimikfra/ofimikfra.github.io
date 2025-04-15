@@ -9,10 +9,23 @@
     <script src="script.js"></script>
     <body>
 
+        <div class="headerhome"> <!-- top bar with name & socmed links -->
+
+            <a href="https://www.linkedin.com/in/sofia-mikaela-francisco-6605b5286/" target=”_blank”>
+                <img src="pics/linkedin.png" alt="linkedin">
+            </a>
+            <a href="https://github.com/ofimikfra" target=”_blank”>
+                <img src="pics/github.png" alt="github">
+            </a>
+            
+        </div>
+
+        <div class="blurtop"> &nbsp; </div>
+
         <div class="header"> <!-- top bar with name & socmed links -->
 
             <div class="typer">
-                <div class="typesmooth">GET IN TOUCH WITH ME</div>
+                <div class="typesmooth">GET IN TOUCH</div>
             </div>
 
             <a href="https://linkedin.com" target=”_blank”>
@@ -23,7 +36,6 @@
             </a>
             
         </div>
-
 
         <div class="container"> 
 
@@ -38,7 +50,7 @@
 
             </div>
     
-            <div class="main" style="display: flex; align-items: flex-start; padding-top: 80px;"> <!-- contact form -->
+            <div class="maincontact"> <!-- contact form -->
 
                 <div class="formdesc">
 
@@ -49,15 +61,13 @@
                         Would love to hear from you!
                     </p>
 
-                    <p style="font-size: 18px;">or shoot me an email me at <a href="mailto:sofiambfrancisco@gmail.com">sofiambfrancisco@gmail.com</a></p>
+                    <p id="sub">or shoot me an email me at <a href="mailto:sofiambfrancisco@gmail.com">sofiambfrancisco@gmail.com</a></p>
 
                     <img src="https://i.pinimg.com/564x/0b/58/eb/0b58eb29cc9260e1c7a45be0f0fffccb.jpg" width="100%" style="border-radius: 20px;">
                 </div>
                 
                 <form name="contact" action="mailto:sofiambfrancisco@gmail.com" method="post" enctype="text/plain" onsubmit="return validateForm()">
 
-                    <p style="font-size: 15px; margin-top: 0px;">The form doesn't quite work right now, just email me manually!</p>
-                    
                     <input type="text" name="name" placeholder="Name" maxlength="100" size="50%" required>
                     <input type="text" name="email" placeholder="Email Address" maxlength="100" size="50%" required>
                     <textarea name="message" placeholder="What's up?" rows="10" cols="49" required></textarea> <br>
