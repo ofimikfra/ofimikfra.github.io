@@ -1,0 +1,435 @@
+body {
+    background-image: url(media/bg1.png);
+    background-color: #212434;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-size: 25px;
+    font-family: "fanda";
+    color: #fffbe0;
+    padding: 30px;
+}
+
+p {
+    line-height: normal;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+p a {
+    color: #bcc3e2;
+    text-decoration: underline;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: #fffbe0;
+    transition: transform 0.3s ease;
+}
+
+a:visited {
+    color: #fffbe0;
+}
+
+a:hover {
+    transform: translateX(10px);
+    color: #bcc3e2;
+}
+
+.footer {
+    color: #bcc3e2;
+    text-align: center;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.container {
+    display: flex;
+}
+
+.main {
+    color: #fffbe0;
+    margin-left: 250px;
+    flex-grow: 1;
+}
+
+span {
+    color: #bcc3e2;
+    text-decoration: underline;
+}
+
+hr {
+    border: 2px solid #32354a;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeIn 1s forwards;
+    animation-delay: 0.1s;
+}
+
+/* ------------------------------- animations ------------------------------- */
+
+@keyframes typing {
+    from {width: 0}
+    to {width: 100%}
+}
+
+@keyframes blink {
+    0%, 50% { border-color: #fffbe0; }
+    50%, 100% { border-color: transparent; }
+}
+
+/* ---------------------------------- fonts --------------------------------- */
+
+@font-face {
+    font-family: "fanda";
+    src: url("fonts/fanda-black-font/FandaBlack-vm6E.ttf");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ---------------------------- typing animation ---------------------------- */
+
+.typer {
+    width: 87%;
+    display: inline-block;
+}
+
+.typesmooth {
+    overflow: hidden;
+    border-right: .10em solid #fffbe0;
+    white-space: nowrap;
+    font-size: 50px;
+    width: 0;
+    animation: typing 1.5s forwards;
+}
+
+.typewrite {
+    overflow: hidden;
+    border-right: .10em solid #fffbe0;
+    white-space: nowrap;
+    font-size: 50px;
+    width: 0;
+    animation: typing 1s steps(18, end) forwards, blink 1s infinite step-end 0.8s;
+}
+
+/* --------------------------------- header --------------------------------- */
+
+.header {
+    margin-left: 200px;
+    margin-bottom: 20px;
+    background-color: #212434;
+}
+
+.header img {
+    width: 4%;
+    float: right;
+    margin-left: 20px;
+    transition: transform 0.3s ease;
+}
+
+.header img:hover {
+    transform: scale(1.2);
+}
+
+/* ------------------------------- header home ------------------------------ */
+
+.headerhome {
+    margin-left: 200px;
+    margin-bottom: 20px;
+    background-color: #212434;
+}
+
+.headerhome img {
+    width: 4%;
+    float: right;
+    margin-left: 20px;
+    transition: transform 0.3s ease;
+}
+
+.headerhome img:hover {
+    transform: scale(1.2);
+}
+
+/* ------------------------------- nav sidebar ------------------------------ */
+
+.nav {
+    top: 280px;
+    margin-right: 46px;
+    width: 15%;
+    line-height: 60px;
+    position: fixed;
+}
+
+.nav a {
+    text-decoration: none;
+    font-size: 25px;
+    display: inline-block;
+}
+
+/* -------------------------------- homepage -------------------------------- */
+
+.intro {
+    display: flex; 
+    align-items: flex-start; 
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeIn 1s forwards;
+}
+
+.profile {
+    display: inline-block;
+    width: 35%;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+.about {
+    display: inline-block;
+    width: 60%;
+    align-items: center;
+    margin: auto;
+
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeIn 1s forwards;
+}
+
+.about p a:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+/* --------------------------------- skills --------------------------------- */
+
+.skills {
+    display: flex;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeIn 1s forwards;
+    animation-delay: 0.4s;
+}
+
+.skillist {
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+}
+
+.skillist img {
+    transition: transform 0.5s ease;
+    width: 50%;
+    margin-bottom: 5px;
+}
+
+.skillist img:hover {
+    transform: scale(1.2);
+}
+
+.skillist .skilldesc {
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 15px;
+}
+
+.skillist:hover .skilldesc {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* -------------------------------- projects -------------------------------- */
+
+.proj {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: fadeIn 1s forwards;
+}
+
+.proj img {
+    width: 35%;
+    margin-right: 25px;
+    border-radius: 20px;
+}
+
+.projdesc {
+    display: inline-block;
+    line-height: 25px;
+    font-size: 20px;
+}
+
+.projdesc img  {
+    border-radius: 0;
+    width: 5%;
+    transition: transform 0.5s ease;
+}
+
+.projdesc img:hover  {
+    border-radius: 0;
+    width: 5%;
+    transform: scale(1.2);
+}
+
+.projdesc h2, .cert h2 {
+    transition: transform 0.3s ease;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.projdesc h2:hover, .cert h2:hover {
+    transform: translateX(30px);
+}
+
+.projdesc h2::before, .cert h2::before {
+    color: #bcc3e2;
+    content: "> ";
+    position: absolute;
+    left: -30px;
+    opacity: 0;
+    transition: opacity 0.3s ease, left 0.3s ease;
+}
+
+.projdesc h2.hovered::before, .cert h2.hovered::before {
+    left: -50;
+    opacity: 1;
+}
+
+/* ------------------------------ certificates ------------------------------ */
+
+.maincert {
+    display: flex;
+    color: #fffbe0;
+    margin-left: 250px;
+    flex-grow: 1;
+}
+
+.cert {
+    display: inline-block;
+    margin-right: 40px;
+    padding: 10px;
+    width: 20%;
+    line-height: 25px;
+    font-size: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards;
+}
+
+.cert img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* -------------------------------- contacts -------------------------------- */
+
+.maincontact {
+    display: flex; 
+    align-items: flex-start; 
+    padding-top: 80px;
+    color: #fffbe0;
+    margin-left: 250px;
+    flex-grow: 1;
+}
+
+form {
+    display: inline-block;
+    width: 50%;
+    
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeIn 1s forwards;
+    animation-delay: 0.2s;
+}
+
+.formdesc {
+    display: inline-block;
+    width: 45%;
+    margin-right: 40px;
+    font-size: 20px;
+
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeIn 1s forwards;
+}
+
+form input{
+    background-color: #32354a;
+    color: #fffbe0;
+    border: none;
+    font-size: 18px;
+    line-height: 25px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+textarea {
+    background-color: #32354a;
+    border-radius: 10px;
+    color: #fffbe0;
+    border: none;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    padding: 10px;
+}
+
+.button {
+    width: fit-content;
+    font-size: 20px;
+    font-family: fanda;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid #fffbe0;
+    display: inline-block;
+    padding-bottom: 7px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    color: #32354a;
+    background-color: #fffbe0;
+    transform: translateX(10px);
+}
+
+/* ---------------------------------- hide ---------------------------------- */
+
+.nav-toggle {
+    display: none; 
+}
+
+.headerhome {
+    display: none;
+}
+
+.blurtop {
+    display: none;
+}
+
+
+
+.nav.active {
+    display: block;
+}
