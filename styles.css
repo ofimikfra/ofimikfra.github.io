@@ -1,5 +1,5 @@
 body {
-    background-image: url(media/bg1.png);
+    background-image: url(/media/bg1.png);
     background-color: #212434;
     background-repeat: no-repeat;
     background-size: cover;
@@ -45,7 +45,7 @@ a:hover {
     left: 0;
     bottom: 0;
     width: 100%;
-    padding: 10px;
+    margin-top: 50px;
     font-size: 18px;
 }
 
@@ -91,7 +91,7 @@ hr {
 
 @font-face {
     font-family: "fanda";
-    src: url("fonts/fanda-black-font/FandaBlack-vm6E.ttf");
+    src: url("/fonts/fanda-black-font/FandaBlack-vm6E.ttf");
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
@@ -186,7 +186,7 @@ hr {
 
 .intro {
     display: flex; 
-    align-items: flex-start; 
+    align-items: left; 
     opacity: 0;
     transform: translateY(-20px);
     animation: fadeIn 1s forwards;
@@ -197,6 +197,10 @@ hr {
     width: 35%;
     margin-right: 20px;
     margin-top: 30px;
+}
+
+.profile img {
+    width: 100%;
 }
 
 .about {
@@ -210,15 +214,11 @@ hr {
     animation: fadeIn 1s forwards;
 }
 
-.about p a:hover {
-    transform: translateY(-5px);
-    transition: transform 0.3s ease;
-}
-
 /* --------------------------------- skills --------------------------------- */
 
 .skills {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
     width: 100%;
     opacity: 0;
     transform: translateY(-20px);
@@ -227,9 +227,9 @@ hr {
 }
 
 .skillist {
-    display: inline-block;
     align-items: center;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .skillist img {
@@ -240,20 +240,6 @@ hr {
 
 .skillist img:hover {
     transform: scale(1.2);
-}
-
-.skillist .skilldesc {
-    opacity: 0;
-    transform: translateY(-100%);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-    white-space: nowrap;
-    overflow: hidden;
-    font-size: 15px;
-}
-
-.skillist:hover .skilldesc {
-    opacity: 1;
-    transform: translateY(0);
 }
 
 /* -------------------------------- projects -------------------------------- */
@@ -326,10 +312,9 @@ hr {
 }
 
 .cert {
-    display: inline-block;
     margin-right: 40px;
     padding: 10px;
-    width: 20%;
+    width: 90%;
     line-height: 25px;
     font-size: 20px;
     opacity: 0;
@@ -337,81 +322,47 @@ hr {
     animation: fadeIn 1s forwards;
 }
 
+.cert h2 {
+    margin-top: 10px;
+}
+
 .cert img {
     width: 100%;
     border-radius: 20px;
+}
+
+.cert p {
+    font-size: 15px;
+    margin-top: 5px;
 }
 
 /* -------------------------------- contacts -------------------------------- */
 
 .maincontact {
     display: flex; 
-    align-items: flex-start; 
-    padding-top: 80px;
+    align-items: left; 
+    padding-top: 50px;
     color: #fffbe0;
     margin-left: 250px;
     flex-grow: 1;
-}
-
-form {
-    display: inline-block;
-    width: 50%;
-    
     opacity: 0;
-    transform: translateY(-20px);
-    animation: fadeIn 1s forwards;
-    animation-delay: 0.2s;
-}
-
-.formdesc {
-    display: inline-block;
-    width: 45%;
-    margin-right: 40px;
-    font-size: 20px;
-
-    opacity: 0;
-    transform: translateY(-20px);
+    transform: translateY(20px);
     animation: fadeIn 1s forwards;
 }
 
-form input{
-    background-color: #32354a;
-    color: #fffbe0;
-    border: none;
-    font-size: 18px;
-    line-height: 25px;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 10px;
+.contactdesc {
+    width: 100%;
+    margin-top: 40px;
 }
 
-textarea {
-    background-color: #32354a;
-    border-radius: 10px;
-    color: #fffbe0;
-    border: none;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 20px;
-    padding: 10px;
+.contactimg {
+    width: 60%;
+    margin-right: 50px;
 }
 
-.button {
-    width: fit-content;
-    font-size: 20px;
-    font-family: fanda;
-    border-radius: 20px;
-    background-color: transparent;
-    border: 2px solid #fffbe0;
-    display: inline-block;
-    padding-bottom: 7px;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-}
-
-.button:hover {
-    color: #32354a;
-    background-color: #fffbe0;
-    transform: translateX(10px);
+.contactdesc p a:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
 }
 
 /* ---------------------------------- hide ---------------------------------- */
@@ -427,8 +378,6 @@ textarea {
 .blurtop {
     display: none;
 }
-
-
 
 .nav.active {
     display: block;

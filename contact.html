@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Contact Sofia</title>
-        <link rel="icon" type="image/x-icon" href="media/icon.png">
+        <link rel="icon" type="image/x-icon" href="/media/icon.png">
         <link rel="stylesheet" type="text/css" href="styles.css">
         <link rel="stylesheet" type="text/css" href="mobile.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,10 +13,10 @@
         <div class="headerhome"> <!-- top bar with name & socmed links -->
 
             <a href="https://www.linkedin.com/in/sofia-mikaela-francisco-6605b5286/" target=”_blank”>
-                <img src="media/linkedin.png" alt="linkedin">
+                <img src="/media/linkedin.png" alt="linkedin">
             </a>
             <a href="https://github.com/ofimikfra" target=”_blank”>
-                <img src="media/github.png" alt="github">
+                <img src="/media/github.png" alt="github">
             </a>
             
         </div>
@@ -30,10 +30,10 @@
             </div>
 
             <a href="https://linkedin.com" target=”_blank”>
-                <img src="media/linkedin.png" alt="linkedin">
+                <img src="/media/linkedin.png" alt="linkedin">
             </a>
             <a href="https://github.com/ofimikfra" target=”_blank”>
-                <img src="media/github.png" alt="github">
+                <img src="/media/github.png" alt="github">
             </a>
             
         </div>
@@ -51,30 +51,31 @@
 
             </div>
     
-            <div class="maincontact"> <!-- contact form -->
+            <div class="maincontact"> 
 
-                <div class="formdesc">
+                <div class="contactimg">
+                    <img src="/media/contact.png" width="100%" style="border-radius: 20px;">
+                </div>
 
-                    <h2 style="margin-top: 0;">let's connect!</h2>
+                <div class="contactdesc">
+
+                    <h2>let's connect!</h2>
 
                     <p>
                         I'm always open to chatting with others to learn, share ideas, collaborate, or to just say hi. 
-                        Would love to hear from you!
+                        Would love to connect from you!
                     </p>
 
-                    <p id="sub">or shoot me an email me at <a href="mailto:sofiambfrancisco@gmail.com">sofiambfrancisco@gmail.com</a></p>
-
-                    <img src="https://i.pinimg.com/564x/0b/58/eb/0b58eb29cc9260e1c7a45be0f0fffccb.jpg" width="100%" style="border-radius: 20px;">
+                    <p>Shoot me an email at <a href="mailto:sofiambfrancisco@gmail.com">sofiambfrancisco@gmail.com</a></p>
+                    <p>
+                        <a style="color: #bcc3e2;" href="https://github.com/ofimikfra" target="_blank">Github</a>
+                            &nbsp; | &nbsp; 
+                        <a style="color: #bcc3e2;" href="https://www.linkedin.com/in/sofia-mikaela-francisco-6605b5286/" target="_blank">LinkedIn</a>
+                            &nbsp; | &nbsp;
+                        <a style="color: #bcc3e2;" href="/media/resume.pdf" download="Sofia Francisco Resume">Resume</a>
+                    </p>
+                    
                 </div>
-                
-                <form name="contact" action="mailto:sofiambfrancisco@gmail.com" method="post" enctype="text/plain" onsubmit="return validateForm()">
-
-                    <input type="text" name="name" placeholder="Name" maxlength="100" size="50%" required>
-                    <input type="text" name="email" placeholder="Email Address" maxlength="100" size="50%" required>
-                    <textarea name="message" placeholder="What's up?" rows="10" cols="49" required></textarea> <br>
-                    <input class="button" type="submit" value="SEND" style="width: 20%;">
-
-                </form>
 
             </div>
 

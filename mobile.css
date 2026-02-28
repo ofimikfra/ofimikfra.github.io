@@ -1,5 +1,3 @@
-/* for mobile */
-
 @media (max-width: 768px) {
 
     .container {
@@ -12,7 +10,7 @@
     }
 
     body {
-        background-image: url(media/bg2.png);
+        background-image: url(/media/bg2.png);
         background-color: #212434;
         background-repeat: no-repeat;
         background-size: cover;
