@@ -16,17 +16,6 @@ function byeproj(id) {
     h2.classList.remove('hovered');
 }
 
-function validateForm() {
-    let email = document.forms["contact"]["email"].value;
-    if (!email.match(/\w\S+@\S+(\.\S+){1,}/)) {
-        alert("Please enter a valid email address.")
-        return false
-    }
-
-    errorElement.textContent = "";
-    return true;
-}
-
 function toggleNav() {
     var nav = document.querySelector('.nav');
     var main = document.querySelector('.main');
