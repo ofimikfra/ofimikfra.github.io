@@ -1,143 +1,195 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Sofia's Projects</title>
-        <link rel="icon" type="image/x-icon" href="/media/icon.png">
+        <title>Sofia's Portfolio</title>
+        <link rel="icon" type="image/x-icon" href="/media/favicon.ico">
         <link rel="stylesheet" type="text/css" href="styles.css">
         <link rel="stylesheet" type="text/css" href="mobile.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <?xml version="1.0" encoding="UTF-8"?>
     </head>
-    <script src="script.js"></script>
     <body>
-
-        <div class="headerhome"> <!-- top bar with name & socmed links -->
-
-            <a href="https://www.linkedin.com/in/sofia-mikaela-francisco-6605b5286/" target=”_blank”>
-                <img src="/media/linkedin.png" alt="linkedin">
-            </a>
-            <a href="https://github.com/ofimikfra" target=”_blank”>
-                <img src="/media/github.png" alt="github">
-            </a>
-            
-        </div>
-
-        <div class="blurtop"> &nbsp; </div>
-
-        <div class="header"> <!-- top bar with name & socmed links -->
-
-            <div class="typer">
-                <div class="typesmooth">MY PROJECTS</div>
-            </div>
-
-            <a href="https://www.linkedin.com/in/sofia-mikaela-francisco-6605b5286/" target=”_blank”>
-                <img src="/media/linkedin.png" alt="linkedin">
-            </a>
-            <a href="https://github.com/ofimikfra" target=”_blank”>
-                <img src="/media/github.png" alt="github">
-            </a>
-            
-        </div>
-
-
-        <div class="container"> 
-
-            <button class="nav-toggle" onclick="toggleNav()">☰</button>
-
-            <div class="nav"> <!-- navigation sidebar -->
-
-                <a href="index.html" onmouseover="yay(this)" onmouseout="bye(this)">home </a> <br>
-                <a href="projects.html" class="current" >projects !!!</a> <br>
-                <a href="certs.html" onmouseover="yay(this)" onmouseout="bye(this)">certifications </a> <br>
-                <a href="contact.html" onmouseover="yay(this)" onmouseout="bye(this)">contact me </a>
-
-            </div>
-    
-            <div class="main"> <!-- main content -->
-
-                <div class="proj">
-
-                    <img class="projimg" src="/media/projects/sova.png">
-
-                    <div class="projdesc">
-                        <h2><a href="https://github.com/ofimikfra/SOVA" target="_blank" onmouseover="goproj(this)" onmouseout="byeproj(this)">SOVA</a></h2>
-                        <p>
-                            An AI-powered, real-time, video conferencing accessibility tool for visually impaired users to bridge the gap in communication and empower inclusivity. 
-                            Detects and analyzes facial expressions, gestures, and body actions of call participants and translates them into descriptive audio feedback.
-                        </p>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="python">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/opencv/opencv-original.svg" alt="opencv"/>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="html" width="5%">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="css">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="javascript">
-          
-                    </div>
-                </div>
-
-                <hr style="animation-delay: 0.1s; transform: translateX(-20px);">
-                
-                <div class="proj" style="animation-delay: 0.2s;">
-                    
-                    <img class="projimg" src="/media/projects/wastepred.png">
-
-                    <div class="projdesc">
-                        <h2><a href="https://github.com/ofimikfra/AI-Metal-Waste-Percentage-Prediction" target="_blank" onmouseover="goproj(this)" onmouseout="byeproj(this)">AI Metal Waste Percentage Prediction</a></h2>
-                        <p>
-                            Trained four ML models on a metal manufacturing company's production waste data and product data to proactively 
-                            predict the waste percentage before fabrication. Aimed to improve cost budgeting and resource utilization.
-                        </p>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="python">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg" alt="scikitlearn"/>
-                    </div>
-
-                </div>
-
-                <hr style="animation-delay: 0.3s; transform: translateX(-20px);">
-                
-                <div class="proj" style="animation-delay: 0.4s;">
-                    
-                    <img class="projimg" src="/media/projects/medicloud.png">
-
-                    <div class="projdesc">
-                        <h2><a href="https://github.com/ofimikfra/MediCloud-Network-Configuration" target="_blank" onmouseover="goproj(this)" onmouseout="byeproj(this)">MediCloud Network</a></h2>
-                        <p>
-                            Network configuration for a hypothetical mid-sized healthcare technology company that provides cloud-based solutions for patient management. 
-                        </p>
-                        <img src="https://cisco-packet-tracer.fileion.com/storage/software/logos/2025/06/cisco-packet-tracer.png" alt="packet tracer">
-                    </div>
-
-                </div>
-
-                <hr style="animation-delay: 0.5s; transform: translateX(-20px);">
-                
-                <div class="proj" style="animation-delay: 0.6s;">
-                    
-                    <img class="projimg" src="/media/projects/cookingpapa.png">
-
-                    <div class="projdesc">
-                        <h2><a href="" target="_blank" onmouseover="goproj(this)" onmouseout="byeproj(this)">Recipe Sharing Website</a></h2>
-                        <p>
-                            A website where users can browse and upload recipes.
-                            It features user authentication, a search feature, and recipe and category management.
-                            Created for a group project for my CSIT128 Web Development subject.
-                        </p>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="html">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="css">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="javascript">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/json/json-original.svg" alt="json">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="mysql">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="node.js">
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="footer">
-            @ 2024 Sofia Francisco. Made with 🤍
-        </div>
         
+        <div class="sideBar">
 
+            <section class="contacts">
+                <a class="contactIcon" href="https://www.linkedin.com/in/sofiambfrancisco/">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" class="bi bi-linkedin" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg>
+                    <span class="label">LinkedIn</span>
+                </a>
+                <a class="contactIcon" href="https://github.com/ofimikfra">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" class="bi bi-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/></svg>
+                    <span class="label">GitHub</span>
+                </a>
+            </section>
+
+            <nav>
+                <a class="navIcon" href="index.html">
+                    <svg stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M9 21H7C4.79086 21 3 19.2091 3 17V10.7076C3 9.30887 3.73061 8.01175 4.92679 7.28679L9.92679 4.25649C11.2011 3.48421 12.7989 3.48421 14.0732 4.25649L19.0732 7.28679C20.2694 8.01175 21 9.30887 21 10.7076V17C21 19.2091 19.2091 21 17 21H15M9 21V17C9 15.3431 10.3431 14 12 14V14C13.6569 14 15 15.3431 15 17V21M9 21H15" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                    <span class="label">Home</span>
+                </a>
+                <a class="navIcon" href="projects.html">
+                    <svg stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M2 11V4.6C2 4.26863 2.26863 4 2.6 4H8.77805C8.92127 4 9.05977 4.05124 9.16852 4.14445L12.3315 6.85555C12.4402 6.94876 12.5787 7 12.722 7H21.4C21.7314 7 22 7.26863 22 7.6V11M2 11V19.4C2 19.7314 2.26863 20 2.6 20H21.4C21.7314 20 22 19.7314 22 19.4V11M2 11H22" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                    <span class="label">Projects</span>
+                </a>
+                <a class="navIcon" href="contact.html">
+                    <svg stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M7.5 22C10.5376 22 13 19.5376 13 16.5C13 13.4624 10.5376 11 7.5 11C4.46243 11 2 13.4624 2 16.5C2 17.5018 2.26783 18.441 2.7358 19.25L2.275 21.725L4.75 21.2642C5.55898 21.7322 6.49821 22 7.5 22Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M15.2824 17.8978C16.2587 17.7405 17.1758 17.4065 18 16.9297L21.6 17.6L20.9297 14C21.6104 12.8233 22 11.4571 22 10C22 5.58172 18.4183 2 14 2C9.97262 2 6.64032 4.97598 6.08221 8.84884" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                    <span class="label">Contact</span>
+                </a>
+            </nav>
+
+        </div>
+
+        <div id="navShadow"></div>
+
+        <main>
+
+            <section class="project">
+                <div class="projectimg">
+                    <img src="/media/projects/sova.png" width="100%">
+                </div>
+                <div class="projectdesc glassdark">
+                    <h3>SOVA</h3>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
+                            <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"/>
+                            <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"/>
+                        </svg>
+                        <a href="https://github.com/ofimikfra/SOVA">Github</a> · <a href="https://sovabyluminara.netlify.app/">Website</a> · <a href="https://www.instagram.com/sova.luminara/">Instagram</a> · <a href="https://www.linkedin.com/company/sovabyluminara/">LinkedIn</a>
+                    </div>
+                    <p>
+                        An AI-powered real-time video call accessibility tool for visually impaired users to bridge the gap in communication 
+                        and empower inclusivity. Detects facial expressions and gestures of call participants and translates it into 
+                        TTS descriptions.
+                    </p>
+
+                    <div class="techstack">
+                        <a href="https://www.python.org/"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="python"/> </a>
+                        <a href="https://github.com/opencv/opencv"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/opencv/opencv-original.svg" alt="opencv"/> </a>
+                        <a href="https://mediapipe.org/"> <img src="https://viz.mediapipe.dev/logo.png" alt="mediapipe"/> </a>
+                        <a href="https://docs.ultralytics.com/"> <img src="https://raw.githubusercontent.com/ultralytics/assets/main/logo/Ultralytics-logomark-color.png" alt="yolo"/> </a>
+                        <a href="https://websockets.readthedocs.io/"> <img src="https://websockets.readthedocs.io/en/stable/_static/websockets.svg" alt="websockets"> </a>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="html"/> </a>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="css"/> </a>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="js"/> </a>
+                    </div>
+
+                    <div class="areas">
+                        <span class="area">Computer vision</span>
+                        <span class="area">Natural Language Processing</span>
+                        <span class="area">Audio Speech Recognition</span>
+                        <span class="area">Local LLM</span>
+                        <span class="area">System architecture design</span>
+                        <span class="area">Technical documentation</span>
+                        <span class="area">Accessibility-focused UX/UI design</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project reverse">
+                <div class="projectimg">
+                    <img src="/media/projects/wastepred.png" width="100%">
+                </div>
+                <div class="projectdesc glassdark">
+                    <h3>AI Metal Waste Percentage Prediction</h3>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
+                            <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"/>
+                            <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"/>
+                        </svg>
+                        <a href="https://github.com/ofimikfra/AI-Metal-Waste-Percentage-Prediction">Github</a>
+                    </div>
+                    <p>
+                        Trained four ML models (KNN, SVM, random forest, and logistic regression) on a metal manufacturing company's 
+                        production waste data and product data to proactively predict the waste percentage before fabrication. 
+                        Aimed to improve cost budgeting and resource utilization.
+                    </p>
+
+                    <div class="techstack">
+                        <a href="https://www.python.org/"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="python"/> </a>
+                        <a href="https://numpy.org/"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" alt="numpy"/> </a>
+                        <a href="https://pandas.pydata.org/"> <img src="https://pandas.pydata.org/static/img/favicon_white.ico" alt="pandas"/> </a>
+                        <a href="https://matplotlib.org/"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg" alt="matplotlib"/> </a>
+                        <a href="http://scikit-learn.org/"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg" alt="sklearn"/> </a>
+                    </div>
+
+                    <div class="areas">
+                        <span class="area">Machine learning</span>
+                        <span class="area">Data analysis</span>
+                        <span class="area">Data visualization</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project">
+                <div class="projectimg">
+                    <img src="/media/projects/medicloud.png" width="100%">
+                </div>
+                <div class="projectdesc glassdark">
+                    <h3>MediCloud Network</h3>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
+                            <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"/>
+                            <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"/>
+                        </svg>
+                        <a href="https://github.com/ofimikfra/MediCloud-Network-Configuration">Github</a>
+                    </div>
+                    <p>
+                        Network configuration for a hypothetical mid-sized healthcare technology company that provides cloud-based solutions for patient management. 
+                    </p>
+
+                    <div class="techstack">
+                        <a href="https://www.netacad.com/cisco-packet-tracer"> <img src="https://cisco-packet-tracer.fileion.com/storage/software/logos/2025/06/cisco-packet-tracer.png" alt="packet tracer"/> </a>
+                    </div>
+
+                    <div class="areas">
+                        <span class="area">Networking</span>
+                        <span class="area">Network security</span>
+                        <span class="area">Network architecture design</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project reverse">
+                <div class="projectimg">
+                    <img src="/media/projects/cookingpapa.png" width="100%">
+                </div>
+                <div class="projectdesc glassdark">
+                    <h3>Cooking Papa</h3>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
+                            <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"/>
+                            <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"/>
+                        </svg>
+                        <a href="https://github.com/ofimikfra/Recipe-Sharing-Website">Github</a>
+                    </div>
+                    <p>
+                        Recipe sharing website for browsing, sharing, uploading, and managing recipes. Includes user login/registration,
+                        recipe searching and filtering, and recipe modification (deleting, editing, and uploading). 
+                    </p>
+                    
+                    <div class="techstack">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="html"/> </a>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="css"/> </a>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="js"/> </a>
+                        <a href="https://nodejs.org/en"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="node.js"/> </a>
+                        <a href="https://www.mysql.com/"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="mysql"/> </a>
+                    </div>
+
+                    <div class="areas">
+                        <span class="area">Machine learning</span>
+                        <span class="area">Data analysis</span>
+                        <span class="area">Data visualization</span>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                © 2026 Sofia Mikaela Francisco. All rights reserved.
+            </footer>
+
+        </main>
+
+        <script src="script.js"></script>
     </body>
 </html>
